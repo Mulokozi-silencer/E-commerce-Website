@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400&display=swap');
+
+:root {
+    --tg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --lg-font: 'Your-Large-Font', sans-serif; /* Define your large font */
+    --pink: #e5345b;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary {
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 29px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary {
+    color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--lg-font); /* Fix the missing definition */
+}
+
+.nav-link:hover {
+    color: var(--pink)!important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* header */
+#header {
+    background: url(../images/banner-img-1.webp) top/cover no-repeat;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff!important;
+}
+
+.carousel-item .btn:hover {
+    border-color: var(--pink)!important;
+}
+
+/* title */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+    background-color: var(--pink)!important;
+    color: #fff!important;
+    border-color: var(--pink)!important;
+}
+
+.filter-button-group .btn:hover {
+    color: #fff!important;
+}
+
+.collection-img span {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.collection-img img {
+    max-width: 97%; /* Adjust this value based on your design */
+    max-height: 97%; /* Adjust this value based on your design */
+    height: auto;
+    width: auto;
+}
+
+/* special */
+.special-img span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.special-list {
+    background-color: #f9f9f9; /* Set the background color for the product list */
+}
+
+.special-item {
+    background-color: #fff; /* Set the background color for each product */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.special-list .btn {
+    padding: 8px 20px!important;
+}
+
+.special-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px; /* Optional: Add border-radius to the images */
+}
+
+.special-img:hover img {
+    transform: scale(1.2);
+}
+
+/* offers */
+#offers {
+    background: url(../images/rose-320868_640.jpg) center/cover no-repeat;
+}
+
+#offers .row {
+    min-height: 60vh;
+    display: flex; /* Add this to make align-items and justify-content work */
+    align-items: center;
+    justify-content: center;
+}
+
+.offers-content span {
+    font-size: 28px;
+    color: white; /* Set text color for better visibility */
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--lg-font);
+    color: white; /* Set text color for better visibility */
+}
+
+.offers-content .btn {
+    border-color: transparent !important;
+    background-color: #fff; /* Set a background color for the button */
+    color: #000; /* Set text color for better visibility */
+    padding: 10px 20px; /* Adjust padding for better button appearance */
+    text-decoration: none; /* Remove default link underline */
+    display: inline-block; /* Ensure the button respects padding */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+#blogs {
+    background-color: #f8f9fa; /* Set a light background color for the blog section */
+    padding: 50px 0; /* Add padding for better spacing */
+}
+#blogs .card {
+    width: 100%;
+    /* Add any additional styles you need for spacing, borders, etc. */
+}
+
+#blogs .title h2 {
+    color: #343a40; /* Set the text color for better visibility */
+}
+
+.card {
+    border-radius: 10px; /* Add border-radius for a rounded card appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale the card slightly on hover */
+}
+
+.card img {
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top of the image */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #343a40; /* Set the text color for better visibility */
+}
+
+.card-text {
+    color: #6c757d; /* Set a muted text color */
+}
+
+.btn {
+    background-color: #007bff; /* Set the button background color */
+    color: #fff; /* Set the button text color */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+
+
+/* about */
+#about {
+    background-color: rgba(179, 170, 179, 0.05);
+}
+
+/* newsletter */
+#newsletter {
+    background-color: rgba(179, 170, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+} 
+
+.product-info {
+    text-align: right;
+}
+.price {
+    font-weight: bold;
+}
+
+
+/* footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+.footer a {
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--pink) !important;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
